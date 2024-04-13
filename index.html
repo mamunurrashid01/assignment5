@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>summer sale</title>
+  </head>
+  <body>
+    <!-------------Header section start---------------->
+    <header
+      class="grid md:grid-cols-2 justify-items-center content-center py-10 bg-yellow-100"
+    >
+      <div class="left-site flex items-center">
+        <div class="text-center">
+          <h4 class="uppercase font-semibold">---sale fever---</h4>
+          <h1 class="text-3xl font-bold my-6">
+            Purchase TK 200 or <br />
+            above & get <span class="text-[#E527B2]">20% off</span>
+          </h1>
+          <span class="font-semibold">Use Promo Code</span>
+          <button
+            class="bg-[#E527B2] px-3 py-1 text-white uppercase rounded-md font-semibold ml-2"
+          >
+            sell200
+          </button>
+        </div>
+      </div>
+      <div class="right-site flex items-center">
+        <img
+          class="h-96 w-96 justify-items-center"
+          src="images/Summer 1.png"
+          alt="image"
+        />
+      </div>
+    </header>
+    <!-------------Header section end---------------->
+
+    <!-------------Main section start---------------->
+    <main>
+      <div class="grid lg:grid-cols-2 my-8">
+        <div class="products grid grid-row-3 gap-4 w-11/12 mx-auto">
+          <div class="section1">
+            <h1 class="text-3xl font-semibold">Kitchenware</h1>
+            <div
+              class="kitchenware grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4"
+            >
+              <div
+                onclick="getProduct1() "
+                class="grid justify-items-center shadow-xl hover:bg-gray-500 rounded-md p-4 product"
+              >
+                <div class="justify-items-center text-center">
+                  <img
+                    class="bg-gray-300 p-10 rounded-lg h-48"
+                    src="images/prod1.png"
+                    alt="image"
+                  />
+                  <p id="prod1" class="font-semibold text-xl">K.Accessories</p>
+                  <h6 class="text-lg"><span id="price1">300.50</span> tk</h6>
+                </div>
+              </div>
+              <div
+                onclick="getProduct2()"
+                class="grid justify-items-center shadow-xl rounded-md p-4 product"
+              >
+                <div class="justify-items-center text-center">
+                  <img
+                    class="bg-gray-300 p-10 rounded-lg h-48"
+                    src="images/prod2.png"
+                    alt="image"
+                  />
+                  <p id="prod2" class="font-semibold text-xl">Choppers</p>
+                  <h6 id="price2" class="text-lg">200 tk</h6>
+                </div>
+              </div>
+              <div
+                onclick="getProduct3()"
+                class="grid justify-items-center shadow-xl rounded-md p-4 product"
+              >
+                <div class="justify-items-center text-center">
+                  <img
+                    class="bg-gray-300 p-10 rounded-lg h-48"
+                    src="images/prod3.png"
+                    alt="image"
+                  />
+                  <p id="prod3" class="font-semibold text-xl">K.Accessories</p>
+                  <h6 id="price3" class="text-lg">300.50tk</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Sportswear">
+            <div class="section2">
+              <h1 class="text-3xl font-semibold">Sportswear</h1>
+              <div
+                class="kitchenware grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4"
+              >
+                <div
+                  onclick="getProduct4()"
+                  class="grid justify-items-center bg-gray-100 shadow-xl hover:bg-gray-500 rounded-md p-4 product"
+                >
+                  <div class="justify-items-center text-center">
+                    <img src="images/prod4.png" alt="image" />
+                    <p id="prod4" class="font-semibold text-xl">Special Cap</p>
+                    <h6 id="price4" class="text-lg">540tk</h6>
+                  </div>
+                </div>
+                <div
+                  onclick="getProduct5()"
+                  class="grid justify-items-center bg-gray-100 shadow-xl rounded-md p-4 product"
+                >
+                  <div class="justify-items-center text-center">
+                    <img src="images/prod5.png" alt="image" />
+                    <p id="prod5" class="font-semibold text-xl">Georsy</p>
+                    <h6 id="price5" class="text-lg">900tk</h6>
+                  </div>
+                </div>
+                <div
+                  onclick="getProduct6()"
+                  class="grid justify-items-center bg-gray-100 shadow-xl rounded-md p-4 product"
+                >
+                  <div class="justify-items-center text-center">
+                    <img src="images/prod6.png" alt="image" />
+                    <p id="prod6" class="font-semibold text-xl">Sports Shoe</p>
+                    <h6 id="price6" class="text-lg">3500tk</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Furniture">
+            <div class="section3">
+              <h1 class="text-3xl font-semibold">Furnitures</h1>
+              <div
+                class="kitchenware grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4"
+              >
+                <div
+                  onclick="getProduct7()"
+                  class="grid justify-items-center bg-gray-100 shadow-xl hover:bg-gray-500 rounded-md p-4 product"
+                >
+                  <div class="justify-items-center text-center">
+                    <img src="images/prod7.png" alt="image" />
+                    <p id="prod7" class="font-semibold text-xl">Chaire</p>
+                    <h6 id="price7" class="text-lg">700tk</h6>
+                  </div>
+                </div>
+                <div
+                  onclick="getProduct8()"
+                  class="grid justify-items-center bg-gray-100 shadow-xl rounded-md p-4 product"
+                >
+                  <div class="justify-items-center text-center">
+                    <img src="images/prod8.png" alt="image" />
+                    <p id="prod8" class="font-semibold text-xl">Sofa set</p>
+                    <h6 id="price8" class="text-lg">1000tk</h6>
+                  </div>
+                </div>
+                <div
+                  onclick="getProduct9()"
+                  class="grid justify-items-center bg-gray-100 shadow-xl rounded-md p-4 product"
+                >
+                  <div class="justify-items-center text-center">
+                    <img src="images/prod9.png" alt="image" />
+                    <p id="prod9" class="font-semibold text-xl">HighQ.Sofa</p>
+                    <h6 id="price9" class="text-lg">2000tk</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="selected-products w-5/6">
+          <div class="shadow-xl p-5 h-24">
+            <h1 class="font-bold text-sm">Have Coupon?</h1>
+            <input
+              id="inpField"
+              type="text"
+              autocomplete="off"
+              placeholder="Coupon code"
+              class="input input-bordered input-warning w-full max-w-xs px-4 py-2 border-2 rounded-md"
+            />
+            <button
+              id="applyBtn"
+              class="px-4 py-2 bg-[#E527B2] text-white rounded-md font-semibold"
+              type="button"
+              disabled
+            >
+              Discount
+            </button>
+          </div>
+          <div class="shadow-xl p-5">
+            <div
+              id="products-list"
+              class="products-list min-h-52 border-b-2 py-5"
+            >
+              <h1 class="font-semibold text-md">Selected Product lists:</h1>
+            </div>
+            <div class="price-show border-b-2 py-4">
+              price listing:
+              <h4>Total price : <span id="totalPrice">00</span> tk</h4>
+              <h4>Total Discount : <span id="totalDiscount">00</span> tk</h4>
+              <h4>Payable amounts : <span id="payablAmount">00</span> tk</h4>
+            </div>
+            <button
+              class="bg-[#E527B2] mt-4 px-4 py-2 rounded-md text-white font-semibold"
+              disabled
+            >
+              Make Purchase
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-------------Main section end---------------->
+    <script src="js/index.js"></script>
+  </body>
+</html>
